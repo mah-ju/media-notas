@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de Notas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class="font-bold text-2xl text-center py-3 md:text-3xl">Calcule sua média</h1>
+    <div class="flex flex-col items-center">
+     
+            <label for="nota1" class="font-bold pb-1">Digite a primeira nota</label>
+            <input type="text" id="nota1" class="p-nota h-8 w-3/5 sm:w-2/4 md:w-2/5 lg:w-[30%]">
+   
+    <label for="nota2" class="font-bold pb-1">Digite a segunda nota</label>
+    <input type="text" id="nota2" class="s-nota h-8 w-3/5 sm:w-2/4 md:w-2/5 lg:w-[30%]">
+
+       
+        <button class="bg-red-500 px-10 py-1 mx-auto mt-3 rounded-sm text-lg">calcular</button>
+    </div>
+  
+    <div class="text-lg text-center mt-5 hidden display-result">
+<p class="">Sua média é: <span class="font-bold media"></span></p>
+<p class="">Você está: <span class="font-bold result"></span></p>
+    </div>
+
+
+</body>
+</html>
